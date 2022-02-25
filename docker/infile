@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS students;
+
+CREATE TABLE funcionario (
+  id SERIAL PRIMARY KEY,
+  first_name VARCHAR(100) NOT NULL,
+  last_name VARCHAR(100) NOT NULL,
+  city VARCHAR(255) NOT NULL,
+  phone VARCHAR(255) NOT NULL,
+  gender VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  address VARCHAR(255) NOT NULL,
+  postcode INT NOT NULL,
+  date_of_birth DATE NOT NULL
+);
+
+INSERT INTO funcionario (first_name, last_name, city, phone, gender, email, address, postcode, date_of_birth) VALUES ( 'Ailn', 'Rathmouth', 'Rathmouth', '05144461974', 'Female', 'mailn0@bravesites.com', '97228 Emmalee Harbors Suite 421 South Emmet, TX 54950', 23031, '2001-12-16');
