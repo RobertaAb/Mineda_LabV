@@ -94,4 +94,3 @@ banco criado
 nome: local
 senha: postgres
 
-docker-compose up nest-server
