@@ -96,3 +96,11 @@ banco criado
 nome: local
 senha: postgres
 
+
+
+
+acrescentei no dockerfile
+FROM openjdk:11-jdk-slim
+VOLUME /tmp
+COPY target/spring-boot-docker-*.jar app.jar
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dspring.profiles.active=docker", "-jar", "/app.jar"]
